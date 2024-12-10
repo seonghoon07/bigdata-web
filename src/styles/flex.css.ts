@@ -1,54 +1,52 @@
-import { style } from "@vanilla-extract/css";
+"use client"
 
-const flexGenerator = ({
-  direction = "row",
-  justify = "normal",
-  align = "normal",
-}: {
-  direction?: React.CSSProperties["flexDirection"];
-  justify?: React.CSSProperties["justifyContent"];
-  align?: React.CSSProperties["alignItems"];
-}) =>
-  style({
-    display: "flex",
-    flexDirection: direction,
-    justifyContent: justify,
-    alignItems: align,
-  });
+import React from "react";
+
+const createFlexStyle = (styles: React.CSSProperties) => {
+  return { ...styles };
+};
 
 export const flex = {
-  FLEX: flexGenerator({}),
-  CENTER: flexGenerator({ align: "center", justify: "center" }),
-  VERTICAL: flexGenerator({ align: "center" }),
-  HORIZONTAL: flexGenerator({ justify: "center" }),
-  START: flexGenerator({ align: "center", justify: "flex-start" }),
-  BETWEEN: flexGenerator({ align: "center", justify: "space-between" }),
-  END: flexGenerator({ align: "center", justify: "flex-end" }),
-
-  COLUMN_FLEX: flexGenerator({ direction: "column" }),
-  COLUMN_CENTER: flexGenerator({
-    direction: "column",
-    align: "center",
-    justify: "center",
+  FLEX: createFlexStyle({
+    display: 'flex',
   }),
-  COLUMN_VERTICAL: flexGenerator({ direction: "column", align: "center" }),
-  COLUMN_HORIZONTAL: flexGenerator({
-    direction: "column",
-    justify: "center",
+  CENTER: createFlexStyle({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   }),
-  COLUMN_START: flexGenerator({
-    direction: "column",
-    align: "center",
-    justify: "flex-start",
+  VERTICAL: createFlexStyle({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   }),
-  COLUMN_BETWEEN: flexGenerator({
-    direction: "column",
-    align: "center",
-    justify: "space-between",
+  HORIZONTAL: createFlexStyle({
+    display: 'flex',
+    justifyContent: 'center',
   }),
-  COLUMN_END: flexGenerator({
-    direction: "column",
-    align: "center",
-    justify: "flex-end",
+  START: createFlexStyle({
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  }),
+  BETWEEN: createFlexStyle({
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  }),
+  END: createFlexStyle({
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  }),
+  COLUMN_FLEX: createFlexStyle({
+    display: 'flex',
+    flexDirection: 'column',
+  }),
+  COLUMN_CENTER: createFlexStyle({
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   }),
 };
