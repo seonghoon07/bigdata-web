@@ -24,7 +24,12 @@ const theme = createGlobalTheme(":root", {
   },
   white: "#FFFFFF",
   black: "#171719",
-  stressRed: "#F73435",
+  usageRed: "#FF5C5C",
+  usageYellow: "#FFC457",
+  usageGreen: "#92EE46",
+  usageSkyblue: "#48C9F3",
+  usageBlue: "#5454FF",
+
 });
 
 export default theme;

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "line": "1호선",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "노포",
+        "useStf": 1677
+      },
+      {
+        "id": 2,
+        "direction": "다대포",
+        "useStf": 710
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "line": "2호선",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "양산",
+        "useStf": 1453
+      },
+      {
+        "id": 2,
+        "direction": "장산",
+        "useStf": 942
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "line": "3호선",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "대저",
+        "useStf": 322
+      },
+      {
+        "id": 2,
+        "direction": "수영",
+        "useStf": 912
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "line": "4호선",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "미남",
+        "useStf": 331
+      },
+      {
+        "id": 2,
+        "direction": "안평",
+        "useStf": 274
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "line": "동해선",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "태화강",
+        "useStf": 1235
+      },
+      {
+        "id": 2,
+        "direction": "부전",
+        "useStf": 991
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "line": "부산 김해 경전철",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "가야대",
+        "useStf": 743
+      },
+      {
+        "id": 2,
+        "direction": "사상",
+        "useStf": 1200
+      }
+    ]
+  }
+]

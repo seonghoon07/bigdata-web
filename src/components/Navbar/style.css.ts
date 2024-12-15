@@ -9,6 +9,7 @@ export const navContainer = style({
   height: "78px",
   position: "fixed",
   bottom: "0",
+  zIndex: "9999",
 });
 
 export const navBar = style({
